@@ -1,0 +1,51 @@
+<DOCTYPE html>
+    <html>
+    <head>
+       <style>
+			body {
+			  
+			  background-repeat: no-repeat;
+	  background-size: 1600px 800px;
+      background-color:#8D80A1;
+	  border: 3px solid black;
+	  padding-top: 50px;
+	  padding-right: 50px;
+	  padding-bottom: 50px;
+	  padding-left: 80px;
+	  font-size: 30px;
+			}
+			</style>
+    </head>
+    <body>
+        <div>
+        <img width="300px" height="200px" src="https://shop.morrissylewis.com/219-large_default/mens-henley-t-racer19-in-black.jpg"><br/>
+        <span>Product Name:  mens-henley-t-racer19-in-black</span><br/>
+        <span>Product price: USD $456.00</span><br/>
+        <button onclick="myfunction()">Add to cart</button>
+    
+     </div>
+     <div id="item">
+         <img width="50px" height="50px" src="https://shop.morrissylewis.com/219-large_default/mens-henley-t-racer19-in-black.jpg">
+         Quantity<span id="quantity"></span>
+         USD $<span id="USD $"></span>
+         <hr/>
+         <span id="Total USD $"></span>
+     </div>
+     <button onclick="item()"><img  width="30px" height="30px" src="item.png"><br>Item </button>
+    
+    
+        <script type="text/javascript">
+            document.getElementById('item').style.display="none";
+           function item(){
+               document.getElementById('item').style.display="block";
+           }
+            var qty=["0"];
+            function myfunction(){
+            qty++;
+            document.getElementById('quantity').innerHTML=qty;
+            document.getElementById('USD $').innerHTML=qty*456;
+    
+            }
+        </script>
+    </body>
+    </html>
